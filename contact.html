@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mani Linkha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- F1 Page Transition Overlay -->
+    <div class="transition-overlay">
+        <img src="images/f1car.png" class="f1-car" alt="F1 Racing Car">
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">MANI LINKHA</div>
+        <ul>
+            <li><a href="index.html" data-direction="right">Home</a></li>
+            <li><a href="education.html" data-direction="left">Education</a></li>
+            <li><a href="skills.html" data-direction="right">Skills</a></li>
+            <li><a href="projects.html" data-direction="left">Projects</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Contact Content -->
+    <section class="page-section">
+        <h1 class="page-title">Contact Me</h1>
+
+        <form class="contact-form" id="myContactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6bb66a29-e1e3-4cad-b255-458ed96552a5">
+            <input type="hidden" name="subject" value="New F1 Portfolio Message from Mani Linkha">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Message" required></textarea>
+
+            <button type="submit" class="btn" id="submitBtn">Send Message</button>
+            <div id="formResponse" style="text-align: center; margin-top: 15px; font-weight: bold;"></div>
+        </form>
+
+        <div class="socials">
+            <a href="https://github.com/manilinkha" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mani-linkha-964693346/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/mani_linkha/?hl=en" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Client-Side Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
